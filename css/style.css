@@ -236,9 +236,66 @@ aside {
 footer {
     height: 80px;
     background-color: var(--footer);
-
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
+footer hr {
+    display: inline-block;
+}
+
+.now-playing {
+    align-items: center;
+}
+
+.now-playing img {
+    width: 50px;
+    height: 50px;
+}
+
+.title-song {
+    padding-left: 10px;
+}
+
+.title-song h4 {
+    font-size: 10px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.fa-play {
+    font-size: 25px;
+}
+.controls i {
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.controls div:first-child {
+    margin-bottom: 10px;
+}
+
+.controls hr {
+    width: 50px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.volume {
+    margin-right: 10px;
+}
+
+.volume hr {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.volume i {
+    margin: 0 10px;
+}
 
 /* RESPONSIVE */
 
@@ -270,7 +327,12 @@ footer {
     .container {
         width: calc(100vw - 200px);
     }
-
+    .controls hr {
+        width: 100px;
+    }
+    .volume hr {
+        width: 60px;
+    }
 }
 
 @media screen and (min-width: 768px) {
