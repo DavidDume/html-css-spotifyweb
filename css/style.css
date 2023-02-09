@@ -29,12 +29,6 @@ aside {
     z-index: -1;
 }
 
-
-.debug .item {
-    height: 200px;
-    background-color: white;
-}
-
 .hidden {
     display: none;
 }
@@ -211,9 +205,32 @@ aside {
     margin-left: 20px;
 }
 
+.subtitle {
+    color: var(--aside-nav);
+    margin-left: 20px;
+}
+
 .item {
     width: calc(50% - 40px);
     margin: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h3 {
+    color: white;
+    margin-top: 10px;
+}
+
+.item {
+    color: var(--aside-nav);
+}
+
+.items:last-child img {
+    border-radius: 50%;
 }
 
 footer {
